@@ -14,22 +14,27 @@
         width: 20%;
         height: 100%;
       }
+      
+      .div1 {
+        display: none;
+      }
     </style>
-    <script>
-      function vidDiv1to5() {
-          var x = document.getElementById("vidDiv1to5");
-          if (x.style.display === "block") {
-              x.style.display = "none";
+    
+  </head>
+  <body>
+		<script>
+      function div1Toggle() {
+          var x = document.getElementById("div1");
+          if (x.style.display === "none") {
+              x.style.display = "block";
           } else {
-              x.style.display = "block;
+              x.style.display = "none";
           }
       }
     </script>
-  </head>
-  <body>
     <div class="sidenav">
-      <button onclick="vidDiv1to5();">Podcast Episodes 1-5</button>
-      <div id="vidDiv1to5">
+      <button onclick="div1Toggle()">Podcast Episodes 1-5</button>
+      <div id="div1">
         <a>Wyatt's Podcast Episode 1 (1/2)</a>
         <a>Wyatt's Podcast Episode 1 (2/2)</a>
         <a>Wyatt's Podcast Episode 2 (1/2)</a>
