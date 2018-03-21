@@ -1,0 +1,40 @@
+<DOCTYPE! html>
+  <head>
+    <title>Wyatt's Podcast</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .sidenav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 100%;
+      }
+    </style>
+    <script>
+      function vidDiv1to5() {
+          var x = document.getElementById("vidDiv1to5");
+          if (x.style.display === "block") {
+              x.style.display = "none";
+          } else {
+              x.style.display = "block;
+          }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="sidenav">
+      <button onclick="vidDiv1to5();">Podcast Episodes 1-5</button>
+      <div id="vidDiv1to5">
+        <a>Wyatt's Podcast Episode 1 (1/2)</a>
+        <a>Wyatt's Podcast Episode 1 (2/2)</a>
+        <a>Wyatt's Podcast Episode 2 (1/2)</a>
+        <a>Wyatt's Podcast Episode 2 (2/2)</a>
+      </div>
+    </div>
+  </body>
+</doctype>
