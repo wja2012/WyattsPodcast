@@ -1,2 +1,2 @@
 # WyattsPodcast
-the repository for my podcast
+the repository for my podcast website
